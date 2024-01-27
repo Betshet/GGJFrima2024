@@ -14,8 +14,13 @@ class GGJFRIMA2024_API UMyDialogueManager : public UMounteaDialogueManager
 
 public:
 	UFUNCTION(BlueprintCallable)
-	void RequestNextDialogue(UMounteaDialogueContext* Context)
+	void NextDialogue()
 	{
-		//OnNextDialogueRowDataRequested.Broadcast(Context);
+		if (!DialogueContext)
+		{
+			return;
+		}
+		
+		OnNextDialogueRowDataRequested.Broadcast(DialogueContext);
 	}
 };
