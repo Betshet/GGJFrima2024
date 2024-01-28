@@ -3,7 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/MounteaDialogueManager.h"
+#include "Components/MounteaDialogueManager.h" 
+#include "Helpers/MounteaDialogueGraphHelpers.h"
 #include "MyDialogueManager.generated.h"
 
 
@@ -18,6 +19,7 @@ public:
 	{
 		if (!DialogueContext)
 		{
+			LOG_ERROR(TEXT("[NextDialogue] Missing Dialogue Context. Cannot continue dialogue."));
 			return;
 		}
 		
