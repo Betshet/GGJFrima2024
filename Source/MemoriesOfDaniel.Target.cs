@@ -3,9 +3,9 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class GGJFrima2024Target : TargetRules
+public class MemoriesOfDanielTarget : TargetRules
 {
-	public GGJFrima2024Target(TargetInfo Target) : base(Target)
+	public MemoriesOfDanielTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V4;
